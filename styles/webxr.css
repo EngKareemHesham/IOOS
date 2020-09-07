@@ -17,11 +17,11 @@ html, body, #canvas, #loader {
 }
 
 a:link, a:visited {
-  color: #198EFB;
+  color: #000000;
 }
 
 #loader {
-  background: #2C3146;
+  background: #a4dbfa;
 }
 
 [data-unity-loaded='true'] #loader {
