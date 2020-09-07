@@ -17,7 +17,7 @@ html, body, #canvas, #loader {
 }
 
 a:link, a:visited {
-  color: #a4dbfa;
+  color: #000000;
 }
 
 #loader {
