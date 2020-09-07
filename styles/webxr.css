@@ -17,7 +17,7 @@ html, body, #canvas, #loader {
 }
 
 a:link, a:visited {
-  color: #000000;
+  color: #a4dbfa;
 }
 
 #loader {
@@ -131,7 +131,7 @@ a:link, a:visited {
 #progress,
 #enterxr:hover,
 #instruction button {
-  background-color: #198EFB;
+  background-color: #000000;
 }
 
 #instruction {
