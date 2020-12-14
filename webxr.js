@@ -121,6 +121,11 @@
     DeviceMotionEvent.requestPermission().then( response => {
     // (optional) Do something after API prompt dismissed.
     if ( response == "granted" ) {
+      if (this.isVRSupported && this.isInVRSession && this.gameInstance) {
+        this.exitSession();
+      } else {
+        this.requestPresent();
+      }  
     }
     else
     {
@@ -131,13 +136,15 @@
     alert( " DeviceMotionEvent error "  + e);
     } )
     }
-
+else
+  {
     
     if (this.isVRSupported && this.isInVRSession && this.gameInstance) {
       this.exitSession();
     } else {
       this.requestPresent();
     }
+  }
   }
 
   XRManager.prototype.keyUp = function (evt) {
